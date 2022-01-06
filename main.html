@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-calculator">
+        <div class="header">
+          <h1>Tip Calculator</h1>
+        </div>
+        <div class="content">
+          <div class="detail">
+            <div class="bill-amount-label">How much was your bill?(in dollars)</div>
+            <div class="bill-amount-input">
+              <input
+                type="number"
+                id="amount"
+                placeholder="Enter your bill amount"
+              />
+            </div>
+            <div class="service-label">
+              How was your service?
+            </div>
+            <div class="service-input">
+              <select id="service">
+                <option value="">--Choose an Option--</option>
+                <option value="0">0%-Poor</option>
+                <option value="10">10%-Good</option>
+                <option value="20">20%-Better</option>
+                <option value="30">30%-Outstanding</option>
+              </select>
+            </div>
+            <div class="people-label">
+              How many people are sharing the bill?
+            </div>
+            <div>
+              <input type="number" id="people" placeholder="Number of people" />
+            </div>
+            <div class="btn-container">
+              <button class="calculate" onclick="calculate()">Calculate</button
+              ><button class="reset" onclick="reset()">Reset</button>
+            </div>
+            <div id="result-container">
+              <div class="result-div">
+                <span class="total-label"
+                  >Total Tip:-</span>
+                <span class="total-amount" 
+                  >$<span id="result"></span
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <style></style>
+  <script src="main.js">
+
+  </script>
+</html>
